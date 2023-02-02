@@ -8,7 +8,7 @@ Building realistic projects to improve my front-end skills.
 
 ### Links
 
-- Live Site URL: [Advice generator app](https://p1ng-coming-soon.netlify.app/)
+- Live Site URL: [Advice generator app](https://adv1ce-generator.netlify.app/)
 
 ## Built with
 
