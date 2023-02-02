@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* General Styles */
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(218, 23%, 16%);
+  min-height: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+.advice__generator {
+  max-width: 400px;
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  border-radius: 10px;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.id {
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+}
+
+.divider img {
+  display: block;
+  width: 100%;
+}
+
+.generate-btn {
+  width: 60px;
+  height: 60px;
+  margin-inline: auto;
+  background-color: hsl(150, 100%, 66%);
+  padding: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.generate-btn:hover {
+  filter: drop-shadow(0 0 0.5rem hsl(150, 100%, 66%));
+  transition: 0.3s ease-out;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .advice__generator {
+    min-width: 550px;
+  }
+
+  .divider img {
+    content: url(images/pattern-divider-desktop.svg);
+  }
+}
